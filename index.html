@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Progress-bar</title>
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="stylesheet" href="./styles/progress-bar.css" />
+  </head>
+  <body>
+    <div class="Container">
+      <div>Progress</div>
+
+      <div class="progress-wrapper">
+        <div id="progressContainer"></div>
+        <div class="controls">
+          <label
+            ><input
+              class="value-input"
+              type="number"
+              inputmode="numeric"
+              id="valueInput"
+              min="0"
+              max="100"
+              pattern="[0-9]*"
+            />
+            Value
+          </label>
+
+          <label>
+            <span class="toggle">
+              <input type="checkbox" id="animateToggle" />
+              <span class="toggle__slider"></span
+            ></span>
+            <span>Animate</span>
+          </label>
+
+          <label>
+            <span class="toggle">
+              <input type="checkbox" id="hideToggle" />
+              <span class="toggle__slider"></span>
+            </span>
+            <span>Hide</span>
+          </label>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>
