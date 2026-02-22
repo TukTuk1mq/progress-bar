@@ -9,7 +9,10 @@ const hideToggle = document.getElementById("hideToggle");
 valueInput.addEventListener("input", (e) => {
   let value = e.target.value.replace(/\D/g, "");
 
-  if (value === "") return;
+  if (value === "") {
+    progress.setValue(0);
+    return;
+  }
 
   value = Math.min(100, Number(value));
 
